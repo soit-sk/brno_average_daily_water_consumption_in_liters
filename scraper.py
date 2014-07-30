@@ -3,7 +3,7 @@
 import scraperwiki
 import lxml.html
 
-html = scraperwiki.scrape('http://www.bvk.cz/odpovedi-faq/prumerna-spotreba-vody/')
+html = scraperwiki.scrape('http://www.bvk.cz/zakaznikum/odpovedi-faq/prumerna-spotreba-vody/')
 html = html.replace('&#160;', '')
 root = lxml.html.fromstring(html)
 
