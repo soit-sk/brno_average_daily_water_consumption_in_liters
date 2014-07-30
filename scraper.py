@@ -1,6 +1,7 @@
+#!/usr/bin/env python
+
 import scraperwiki
 import lxml.html
-
 
 html = scraperwiki.scrape('http://www.bvk.cz/odpovedi-faq/prumerna-spotreba-vody/')
 html = html.replace('&#160;', '')
